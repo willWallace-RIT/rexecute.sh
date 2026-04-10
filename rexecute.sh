@@ -3,7 +3,7 @@
 MAIN_PROG="$1"
 ALT_PROG="$2"
 
-"MAIN_PROG"
+`$MAIN_PROG`
 EXIT_CODE=$?
 
-exec "$ALT_PROG"
+exec $ALT_PROG
